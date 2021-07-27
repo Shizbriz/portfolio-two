@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'main';
+  color: white;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'big';
+  src: url(../Backslash-RpJol.otf);
+}
+
+@font-face {
+  font-family: 'main';
+  src: url(../Alegreya-Bold.ttf);
+}
+
+section {
+  display: inline-block;
+}
+
+.container {
+  padding: 0 100px;
+}
+
+p {
+  font-size: 2vw;
+}
+
+h1 {
+  font-size: 6vw;
+  text-shadow: 1px 3px 5px purple;
+}
+
+h2 {
+  font-size: 3vw;
+  text-shadow: 1px 3px 5px purple;
+}
+
+nav {
+  position: fixed;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  font-family: 'big';
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0 15px;
+  text-decoration: none;
+  background: linear-gradient(75deg, white, #fadebb, #f5aa4e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+nav a:hover {
+  text-shadow: 1px 1px 1px  purple;
+}
+
+nav .logo {
+  text-shadow: 1px 3px 5px purple;
+  font-size: 20px;
+  margin-right: 52vw;
+}
+
+nav .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .dropdown-menu {
+  display: none;
+}
+
+nav .bar1,
+nav .bar2,
+nav .bar3 {
+  display: block;
+  height: 2px;
+  margin: 3px 0 3px 13px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background-color: white;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+nav .bar1 {
+  width: 15px;
+}
+
+nav .bar2 {
+  width: 20px;
+}
+
+nav .bar3 {
+  width: 25px;
+}
+
+nav .hamburger {
+  cursor: pointer;
+}
+
+nav .hamburger:hover .bar1,
+nav .hamburger:hover .bar2 {
+  width: 25px;
+}
+
+.panes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  padding: 20px 15vw;
+}
+
+.panes img {
+  -webkit-filter: drop-shadow(3px 3px 5px purple);
+          filter: drop-shadow(3px 3px 5px purple);
+}
+
+.panes .pane {
+  margin: 100px 0 0 100px;
+}
+
+.panes header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+}
+
+.panes header .w {
+  color: white;
+}
+
+.panes header .b {
+  color: burlywood;
+}
+
+.panes .hire {
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 40px;
+  border: 2px solid #f5aa4e;
+  margin-top: 20px;
+}
+
+.panes .hire a {
+  text-decoration: none;
+}
+
+.panes .hire:hover {
+  -webkit-box-shadow: 2px 2px 3px purple;
+          box-shadow: 2px 2px 3px purple;
+}
+
+#about h1 {
+  text-align: center;
+}
+
+#portfolio .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#portfolio .site {
+  width: 40vw;
+  margin: 20px 20px 20px 0;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.contact .contact-icon img {
+  width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 20px;
+  }
+  p {
+    font-size: 3vw;
+  }
+  .panes {
+    margin-top: 20px;
+    padding: 0 50px;
+  }
+  .panes img {
+    margin: 0;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .hamburger {
+    margin-left: 20vw;
+  }
+  .hamburger:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background-color: #020100;
+    right: 10px;
+    padding: 20px 5px 0 5px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .hamburger:hover .dropdown-menu .nav-item {
+    padding: 10px 10px 0 10px;
+  }
+}
+
+@media screen and (max-device-width: 400px) {
+  .hamburger {
+    margin-left: 0;
+  }
+  .panes {
+    padding: 0;
+  }
+  .panes div {
+    padding: 0;
+    margin: 0;
+  }
+  .panes .pane {
+    margin-left: 2vw;
+  }
+  .panes img {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,48 @@
+body {
+  background-color: #000000;
+}
+
+#home {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+   padding-top: 30px;
+
+  span {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: animate 25s linear infinite;
+  }
+  
+
+  
+
+  @keyframes animate{
+    0%{
+        transform: translateY(0%);
+        opacity: 0.8;
+    }
+    100%{
+        transform: translateY(-20000%);
+        opacity: 0.5;
+    }
+}
+}
+
+#about, #portfolio, #contact{
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/588c4ba75cbd6dd9fe3c5bfafaaccdea.jpg);
+padding-top: 60px;
+}
+
+
+@media screen and (max-device-width: 400px){
+  #bubbles{
+    padding: 0;
+  }
+}
