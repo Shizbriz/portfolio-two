@@ -254,10 +254,10 @@ nav .hamburger:hover .bar2 {
     margin: 0;
   }
   .panes .pane {
-    margin-left: 2vw;
+    margin-left: 1vw;
   }
   .panes img {
-    width: 50%;
+    width: 60%;
   }
 }
 /*# sourceMappingURL=style.css.map */
