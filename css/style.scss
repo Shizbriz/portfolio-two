@@ -1,54 +1,59 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'main';
+  font-family: "main";
   color: white;
   overflow: hidden;
 }
-@font-face{
-    font-family: 'big';
-    src: url(../Backslash-RpJol.otf);
+@font-face {
+  font-family: "big";
+  src: url(../Backslash-RpJol.otf);
 }
-@font-face{
-font-family: 'main';
-src: url(../Alegreya-Bold.ttf);
+@font-face {
+  font-family: "main";
+  src: url(../Alegreya-Bold.ttf);
 }
-section{
+section {
   display: inline-block;
 }
+
 .container {
-  padding: 0 100px;
+  padding: 20px 2vw 20px 6vw;
 }
 
-p{
-  font-size: 2vw;
+p {
+  font-size: 4vw;
 }
-h1{
+h1 {
+  font-size: 8vw;
+  text-shadow: 1px 3px 5px purple;
+}
+h2 {
   font-size: 6vw;
-  text-shadow:  1px 3px 5px purple;
+  text-shadow: 1px 3px 5px purple;
 }
-h2{
-  font-size: 3vw;
-  text-shadow:  1px 3px 5px purple;
-}
+
 nav {
-   position: fixed;
-   z-index: 2;
+  position: fixed;
+  z-index: 2;
   display: flex;
- 
-    ul {
+
+  ul {
     display: flex;
   }
   li {
     list-style: none;
+    .container {
+      padding: 0 100px;
+    }
   }
   a {
-    font-family: 'big';
+    font-family: "big";
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px;
     margin: 0 15px;
     text-decoration: none;
-   
+
     background: linear-gradient(
       75deg,
       white,
@@ -59,20 +64,19 @@ nav {
     -webkit-background-clip: text;
     color: transparent;
   }
-  a:hover{
-    text-shadow: 1px 1px 1px  purple;
+  a:hover {
+    text-shadow: 0.1px 0.1px 1px rgb(128, 0, 128);
   }
   .logo {
-   text-shadow:  1px 3px 5px purple;
+    text-shadow: 1px 3px 5px purple;
     font-size: 20px;
-    margin-right: 52vw;
   }
-.nav-right{
-  display: flex;
-}
-  .dropdown-menu{
-      display: none;
+
+  .nav-menu,
+  .dropdown-menu {
+    display: none;
   }
+
   .bar1,
   .bar2,
   .bar3 {
@@ -93,30 +97,50 @@ nav {
   .bar3 {
     width: 25px;
   }
-  .hamburger{
-      cursor: pointer;
+  .hamburger {
+    cursor: pointer;
+    position: fixed;
+    right: 10vw;
   }
   .hamburger:hover {
     .bar1,
     .bar2 {
       width: 25px;
     }
+
+    .dropdown-menu {
+      display: block;
+      position: fixed;
+      z-index: 1;
+      background-color: rgb(2, 1, 0);
+      right: 10vw;
+      padding: 20px 5px 0 5px;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+      .nav-item {
+        padding: 10px 10px 0 10px;
+      }
+    }
   }
 }
 
 .panes {
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   text-align: center;
-  padding: 20px 15vw;
+
   img {
-    
-  filter: drop-shadow(3px 3px 5px purple);
-  
+    filter: drop-shadow(3px 3px 5px purple);
+    width: 100%;
+  }
+  .pane-image {
+    width: 45%;
   }
   .pane {
-    margin: 100px 0 0 100px;
+    margin: 8vh 0 0 5vw;
   }
+
   header {
     display: flex;
     justify-content: center;
@@ -126,10 +150,8 @@ nav {
     }
     .b {
       color: burlywood;
-      
     }
   }
-
 
   .hire {
     padding: 10px 20px;
@@ -137,81 +159,66 @@ nav {
     border-radius: 40px;
     border: 2px solid rgb(245, 170, 78);
     margin-top: 20px;
-    a{
+    a {
       text-decoration: none;
     }
   }
-  .hire:hover{
+  .hire:hover {
     box-shadow: 2px 2px 3px purple;
   }
 }
 
-#about{
-  h1{
+#about {
+  h1 {
     text-align: center;
   }
 }
 
-#portfolio{
-   .container{
-   display: flex;
-   flex-wrap: wrap;
- }
- .site{
-   width: 40vw;
-   margin: 20px 20px 20px 0;
- }
- 
+#portfolio {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .site {
+    width: 80vw;
+    margin: 20px 20px 20px 0;
+  }
 }
 
-.contact{
+.contact {
   display: flex;
   margin-top: 20px;
- .contact-icon{
-   img{
-     width: 50%;
-   }
- }
+
+  img {
+    width: 10%;
+    margin-right: 20px;
+  }
 }
 
-
-@media screen and (max-width: 800px) {
-  .container {padding: 20px;}
-  
-  p{font-size: 3vw;}
-   .panes {
-    margin-top: 20px;
-       padding: 0 50px;
+@media screen and (min-width: 400px) {
+  .panes {
     img {
-      margin: 0;
+      width: auto;
     }
-    
+.pane-image{
+  width: 50%;
+}
+    .pane {
+      margin: 20vh 0 0 8vw;
+    }
   }
-  .nav-menu {
-    display: none;
+
+  p {
+    font-size: 3vw;
   }
-  .hamburger{margin-left: 20vw;}
-  .hamburger:hover{
-      .dropdown-menu{
-      display: block;
-      position: absolute;
-      z-index: 1;
-      background-color: rgb(2, 1, 0);
-      right: 10px;
-      padding: 20px 5px 0 5px;
-       -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-      .nav-item{padding: 10px 10px 0 10px;}
-      
+  h1 {
+    font-size: 6vw;
+    text-shadow: 1px 3px 5px purple;
   }
+  h2 {
+    font-size: 4vw;
+    text-shadow: 1px 3px 5px purple;
   }
-    
 }
 
-@media screen and (max-device-width: 400px){
-   .hamburger{margin-left: 0;}
-  .panes{padding: 0 ;
-    div{padding: 0; margin: 0;}
-  .pane{margin-left: 1vw;}
-img{width: 60%; }}
-}
+
