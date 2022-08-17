@@ -25,16 +25,16 @@ section {
 }
 
 p {
-  font-size: 4vw;
+  font-size: 2vw;
 }
 
 h1 {
-  font-size: 8vw;
+  font-size: 6vw;
   text-shadow: 1px 3px 5px purple;
 }
 
 h2 {
-  font-size: 6vw;
+  font-size: 4vw;
   text-shadow: 1px 3px 5px purple;
 }
 
@@ -199,6 +199,15 @@ nav .hamburger:hover .dropdown-menu .nav-item {
           box-shadow: 2px 2px 3px purple;
 }
 
+.pane p {
+  font-size: 4vw;
+}
+
+.pane h1 {
+  font-size: 8vw;
+  text-shadow: 1px 3px 5px purple;
+}
+
 #about h1 {
   text-align: center;
 }
@@ -214,14 +223,6 @@ nav .hamburger:hover .dropdown-menu .nav-item {
 #portfolio .site {
   width: 40rem;
   margin: 20px 20px 20px 0;
-}
-
-#portfolio p {
-  font-size: 2vw;
-}
-
-#portfolio h2 {
-  font-size: 4vw;
 }
 
 .contact {
