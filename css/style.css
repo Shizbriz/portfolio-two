@@ -3,8 +3,7 @@
   padding: 0;
   font-family: "main";
   color: white;
-  overflow: hidden;
-}
+  }
 
 @font-face {
   font-family: "big";
@@ -212,7 +211,7 @@ nav .hamburger:hover .dropdown-menu .nav-item {
 }
 
 #portfolio .site {
-  width: 40rem;
+  width: 80vw;
   margin: 20px 20px 20px 0;
 }
 
