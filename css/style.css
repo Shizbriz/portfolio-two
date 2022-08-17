@@ -205,7 +205,7 @@ nav .hamburger:hover .dropdown-menu .nav-item {
   font-size: 6vw;
 }
 
-#about p{
+#about p, #portfolio p{
     font-size: 2vw;
   }
 
@@ -221,6 +221,10 @@ nav .hamburger:hover .dropdown-menu .nav-item {
   width: 40rem;
   margin: 20px 20px 20px 0;
 }
+
+#portfolio h2{
+    font-size: 4vw;
+  }
 
 .contact {
   display: -webkit-box;
